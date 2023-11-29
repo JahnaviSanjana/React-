@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<center><body>
+    <div id="appRoot">
+        <!-- Creating a heading element using HTML -->
+        <h1>WELCOME TO REACT PAGE</h1>
+    </div>
+
+    <!-- Creating another heading element using HTML -->
+    <h3>WELCOME TO REACT PAGE 1</h3>
+
+    <script>
+        // Creating a JavaScript element h1
+        var dynamicH1 = document.createElement("h1");
+        dynamicH1.innerHTML = "WELCOME TO REACT PAGE 2";
+
+        // Fetching the root element or container of the page
+        var rootElement = document.getElementById("appRoot");
+
+        rootElement.appendChild(dynamicH1);
+    </script>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        // Creating a React element using CDN links
+        var reactH1Element = React.createElement("h6", {}, "WELCOME TO REACT PAGE 3");
+        var reactRootElement = document.getElementById("appRoot");
+        var reactRoot = ReactDOM.createRoot(reactRootElement);
+        reactRoot.render(reactH1Element);
+    </script>
+
+</body></center>
+
+</html>
