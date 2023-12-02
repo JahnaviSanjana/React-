@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-var MainApp = () => {
-  return (
+var mainApp = (
     <div>
       <h1 id="mainHeading">Hello from React!</h1>
       <p>This is a functional component named MainApp.</p>
@@ -17,8 +16,8 @@ var MainApp = () => {
       <button>Click me</button>
     </div>
   );
-};
+
 
 var appelement = document.getElementById("app-container");
 var appReact = ReactDOM.createRoot(appelement);
-appReact.render(MainApp);
+appReact.render(mainApp);
